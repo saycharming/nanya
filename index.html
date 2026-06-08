@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanya &amp; Babatunde — Our Journey</title>
+<meta name="description" content="Documenting our journey together — 2026 to forever.">
+<meta property="og:title" content="Nanya &amp; Babatunde — Our Journey">
+<meta property="og:description" content="Documenting our journey together — 2026 to forever.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="photos/4-unknown-date1.JPG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF7F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FBF7F0;
+  --card-bg: #FFFDF8;
+  --gold: #C9A96E;
+  --gold-light: #D4BC8B;
+  --gold-dark: #B8934F;
+  --blush: #E8C4B8;
+  --text: #3E2C1F;
+  --text-light: #6B5C4F;
+  --text-muted: #8C7E72;
+  --shadow: 0 2px 20px rgba(62,44,31,0.08);
+  --shadow-card: 0 4px 30px rgba(62,44,31,0.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Lora',Georgia,serif;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── SAKURA EFFECTS ── */
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 40%,rgba(62,44,31,0.08) 65%,rgba(80,30,45,0.12) 90%,rgba(50,20,30,0.2) 100%)}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 20% 10%,rgba(201,169,110,0.07) 0%,transparent 50%),radial-gradient(ellipse at 80% 30%,rgba(255,182,193,0.08) 0%,transparent 50%),radial-gradient(ellipse at 50% 70%,rgba(201,169,110,0.06) 0%,transparent 50%),radial-gradient(ellipse at 30% 90%,rgba(255,192,203,0.06) 0%,transparent 50%);animation:auroraGlow 14s ease-in-out infinite alternate}
+@keyframes auroraGlow{0%{opacity:.6;background-position:0 0,0 0,0 0,0 0}50%{opacity:1;background-position:6% 4%,-5% -3%,3% 6%,-6% -2%}100%{opacity:.7;background-position:-3% -2%,5% 3%,-2% -5%,4% 5%}}
+.petals-layer{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.petal{position:absolute;top:-40px;animation:sakuraFall linear infinite;opacity:0;will-change:transform}
+@keyframes sakuraFall{0%{transform:translateY(0) rotate(0deg) scale(.5);opacity:0}3%{opacity:.75}10%{opacity:.7}75%{opacity:.45}95%{opacity:.08}100%{transform:translateY(115vh) rotate(720deg) scale(.9);opacity:0}}
+.cover::before{content:'';position:absolute;top:-60%;left:50%;transform:translateX(-50%);width:220%;height:220%;background:radial-gradient(ellipse at 50% 0%,rgba(255,182,193,0.12) 0%,transparent 40%),radial-gradient(ellipse at 35% 0%,rgba(255,218,185,0.08) 0%,transparent 50%),radial-gradient(ellipse at 65% 0%,rgba(255,192,203,0.06) 0%,transparent 45%);pointer-events:none;z-index:0;animation:raysShift 12s ease-in-out infinite alternate}
+@keyframes raysShift{0%{opacity:.6;transform:translateX(-50%) scale(1)}100%{opacity:1;transform:translateX(-50%) scale(1.1)}}
+@keyframes compassGlow{0%,100%{filter:drop-shadow(0 0 10px rgba(255,150,170,0.2)) drop-shadow(0 0 25px rgba(201,169,110,0.2))}50%{filter:drop-shadow(0 0 28px rgba(255,140,160,0.55)) drop-shadow(0 0 50px rgba(201,169,110,0.4))}}
+
+/* ── COVER ── */
+.cover{position:relative;height:100vh;min-height:700px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:1;overflow:hidden}
+.cover-bg-particles{position:absolute;inset:0;pointer-events:none;z-index:0}
+.particle{position:absolute;width:3px;height:3px;background:var(--gold);border-radius:50%;animation:floatUp 8s ease-in infinite;opacity:0}
+.particle:nth-child(1){left:10%;animation-delay:0s;animation-duration:7s}
+.particle:nth-child(2){left:20%;animation-delay:1.2s;animation-duration:8.5s}
+.particle:nth-child(3){left:30%;animation-delay:2.4s;animation-duration:6.8s}
+.particle:nth-child(4){left:40%;animation-delay:.6s;animation-duration:9s}
+.particle:nth-child(5){left:50%;animation-delay:3.1s;animation-duration:7.5s}
+.particle:nth-child(6){left:60%;animation-delay:1.8s;animation-duration:8.2s}
+.particle:nth-child(7){left:70%;animation-delay:2.9s;animation-duration:6.5s}
+.particle:nth-child(8){left:80%;animation-delay:.3s;animation-duration:9.5s}
+.particle:nth-child(9){left:90%;animation-delay:3.6s;animation-duration:7.2s}
+.particle:nth-child(10){left:15%;animation-delay:4.1s;animation-duration:8.8s}
+.particle:nth-child(11){left:35%;animation-delay:1.5s;animation-duration:7.8s}
+.particle:nth-child(12){left:55%;animation-delay:2.1s;animation-duration:9.1s}
+.particle:nth-child(13){left:75%;animation-delay:.9s;animation-duration:6.9s}
+.particle:nth-child(14){left:85%;animation-delay:3.3s;animation-duration:8s}
+.particle:nth-child(15){left:45%;animation-delay:4.8s;animation-duration:7.3s}
+.particle.alt{background:var(--blush);width:2px;height:2px}
+@keyframes floatUp{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:.8}50%{opacity:.5}90%{opacity:.1}100%{transform:translateY(-10vh) scale(1.5);opacity:0}}
+.cover-compass{width:80px;height:80px;margin-bottom:2rem;z-index:1;filter:drop-shadow(0 0 18px rgba(255,150,170,0.3)) drop-shadow(0 0 35px rgba(201,169,110,0.25));animation:compassSpin 120s linear infinite,compassGlow 3.5s ease-in-out infinite}
+@keyframes compassSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.cover-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:600;color:var(--text);letter-spacing:.04em;z-index:1;text-shadow:0 0 30px rgba(255,150,170,0.3),0 0 60px rgba(201,169,110,0.25),0 0 100px rgba(255,182,193,0.15)}
+.cover-title .ampersand{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:var(--gold);animation:heartbeat 2s ease-in-out infinite;display:inline-block}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.25)}30%{transform:scale(1)}45%{transform:scale(1.15)}60%{transform:scale(1)}}
+.cover-subtitle{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1rem,2.5vw,1.4rem);font-style:italic;color:var(--text-light);margin-top:1rem;max-width:500px;z-index:1;opacity:0;animation:fadeInUp 1.5s ease-out 1.5s forwards}
+.cover-line{margin-top:2rem;width:60px;height:2px;background:var(--gold);border-radius:1px;z-index:1;opacity:0;animation:expandLine 1s ease-out 2s forwards}
+.cover-scroll{position:absolute;bottom:2.5rem;z-index:1;display:flex;flex-direction:column;align-items:center;gap:.5rem;animation:pulse 2.5s ease-in-out infinite}
+.cover-scroll span{font-family:'Cormorant Garamond',serif;font-size:.8rem;font-style:italic;color:var(--text-muted);letter-spacing:.1em}
+.cover-scroll svg{width:18px;height:18px;stroke:var(--gold)}
+@keyframes pulse{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(8px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes expandLine{from{width:0;opacity:0}to{width:60px;opacity:1}}
+
+/* ── TIMELINE ── */
+.timeline{position:relative;z-index:1;padding:4rem 1.5rem 6rem;max-width:1000px;margin:0 auto}
+.timeline-svg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.date-header{text-align:center;margin:5rem 0 2.8rem;position:relative;z-index:2}
+.date-header-inner{display:inline-block;padding:.6rem 2rem;background:var(--card-bg);border:1px solid var(--gold-light);border-radius:3rem;box-shadow:var(--shadow)}
+.date-header .date-label{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--gold-dark);letter-spacing:.08em;text-transform:uppercase}
+.date-header .date-story{display:block;margin-top:.25rem;font-family:'Playfair Display',serif;font-size:1.5rem;font-style:italic;color:var(--text)}
+.entry-row{display:flex;align-items:stretch;margin:4rem 0;position:relative;z-index:2;justify-content:center;opacity:0;transition:opacity .8s ease}
+.entry-row.visible{opacity:1}
+.entry-row.col{flex-direction:column}
+.entry-card{width:100%;max-width:380px;background:var(--card-bg);border-radius:12px;box-shadow:var(--shadow-card);overflow:hidden;border:1px solid rgba(201,169,110,0.15);transition:box-shadow .3s ease;cursor:pointer}
+.entry-card:hover{margin-top:-4px;box-shadow:0 8px 40px rgba(62,44,31,0.18)}
+.entry-card .card-img-wrap{position:relative;overflow:hidden;aspect-ratio:1/1;background:#f5f0e8}
+.entry-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.entry-card:hover img{transform:scale(1.03)}
+.entry-card .card-caption{padding:1rem 1.2rem;font-size:.9rem;color:var(--text-light);line-height:1.5;position:relative}
+.entry-card .card-caption::before{content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:30px;height:3px;background:var(--gold-light);border-radius:2px}
+.video-card .card-img-wrap{background:linear-gradient(135deg,#2a2520 0%,#1a1612 100%);display:flex;align-items:center;justify-content:center}
+.video-card .play-icon{width:60px;height:60px;border-radius:50%;border:2px solid rgba(201,169,110,0.6);background:rgba(201,169,110,0.15);display:flex;align-items:center;justify-content:center;transition:all .3s ease}
+.video-card .play-icon svg{width:20px;height:20px;fill:var(--gold);margin-left:3px}
+.video-card:hover .play-icon{background:rgba(201,169,110,0.25);border-color:var(--gold);transform:scale(1.1)}
+.gallery-wrap{max-width:380px}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.gallery-grid .entry-card{max-width:100%}
+.gallery-caption{background:var(--card-bg);border-radius:0 0 12px 12px;padding:.8rem 1.2rem;font-size:.9rem;color:var(--text-light);border:1px solid rgba(201,169,110,0.1);border-top:none;width:100%}
+.quote-card{text-align:center;margin:3.5rem 0;z-index:2;position:relative;opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.quote-card.visible{opacity:1;transform:translateY(0)}
+.quote-card p{font-family:'Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--gold-dark);line-height:1.6;max-width:500px;margin:0 auto}
+.quote-card .quote-line{width:40px;height:1.5px;background:var(--gold-light);margin:1.2rem auto 0;border-radius:1px}
+.infinity-section{text-align:center;margin:5rem 0 2rem;position:relative;z-index:2;opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.infinity-section.visible{opacity:1;transform:translateY(0)}
+.infinity-section .infinity-mark{font-family:'Playfair Display',serif;font-size:4rem;color:var(--gold);font-style:italic}
+.infinity-section h2{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--text);margin-top:1rem}
+.infinity-section p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--text-light);margin-top:.5rem;max-width:400px;margin-left:auto;margin-right:auto}
+.footer{text-align:center;padding:3rem 1.5rem;position:relative;z-index:1}
+.footer .footer-names{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text)}
+.footer .footer-dates{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-style:italic;color:var(--gold-dark);margin-top:.5rem;letter-spacing:.1em}
+.footer .footer-heart{margin-top:1rem;color:var(--blush);font-size:1.2rem;animation:heartbeat 2s ease-in-out infinite}
+.lightbox{position:fixed;inset:0;z-index:1000;background:rgba(30,20,15,0.92);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.lightbox.active{opacity:1;pointer-events:all}
+.lightbox-content{position:relative;max-width:90vw;max-height:85vh;border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.lightbox-content img,.lightbox-content video{max-width:90vw;max-height:85vh;display:block;border-radius:8px}
+.lightbox-caption{text-align:center;color:rgba(255,255,255,0.85);font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;margin-top:.8rem;padding:0 1rem}
+.lightbox-close{position:absolute;top:-2.5rem;right:0;width:36px;height:36px;background:0 0;border:1px solid rgba(255,255,255,0.3);border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:all .2s ease}
+.lightbox-close:hover{background:rgba(255,255,255,0.1);border-color:#fff;color:#fff}
+@media(max-width:700px){.entry-row{left:0!important;transform:none!important}.entry-card{max-width:100%}.date-header,.quote-card{text-align:center}.quote-card p{margin:0 auto}.cover-compass{width:60px;height:60px}.timeline-svg{display:none}}
+@media(max-width:400px){.gallery-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ═══ COVER ═══ -->
+<section class="cover">
+  <div class="cover-bg-particles">
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle alt"></div><div class="particle alt"></div><div class="particle alt"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle alt"></div><div class="particle alt"></div><div class="particle alt"></div>
+  </div>
+  <div class="petals-layer" aria-hidden="true" id="petalsCover"></div>
+  <svg class="cover-compass" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+    <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(201,169,110,0.15)" stroke-width="0.5"/>
+    <polygon points="50,8 54,42 50,50 46,42" fill="rgba(201,169,110,0.7)"/>
+    <polygon points="50,92 46,58 50,50 54,58" fill="rgba(201,169,110,0.3)"/>
+    <polygon points="8,50 42,46 50,50 42,54" fill="rgba(201,169,110,0.3)"/>
+    <polygon points="92,50 58,54 50,50 58,46" fill="rgba(201,169,110,0.3)"/>
+    <circle cx="50" cy="50" r="6" fill="rgba(62,44,31,0.5)"/>
+    <circle cx="50" cy="50" r="3" fill="#C9A96E"/>
+    <text x="50" y="22" text-anchor="middle" font-family="'Playfair Display', serif" font-size="9" fill="#C9A96E" font-style="italic">N</text>
+    <text x="50" y="82" text-anchor="middle" font-family="'Playfair Display', serif" font-size="9" fill="rgba(201,169,110,0.5)" font-style="italic">S</text>
+    <text x="78" y="54" text-anchor="middle" font-family="'Playfair Display', serif" font-size="9" fill="rgba(201,169,110,0.5)" font-style="italic">E</text>
+    <text x="22" y="54" text-anchor="middle" font-family="'Playfair Display', serif" font-size="9" fill="rgba(201,169,110,0.5)" font-style="italic">W</text>
+  </svg>
+  <h1 class="cover-title">Nanya <span class="ampersand">&amp;</span> Babatunde</h1>
+  <p class="cover-subtitle">&#8220;Not all who wander are lost — some are just following their heart.&#8221;</p>
+  <div class="cover-line"></div>
+  <div class="cover-scroll"><span>Begin the journey</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- ═══ TIMELINE ═══ -->
+<section class="timeline" id="timeline">
+  <div class="petals-layer" aria-hidden="true" id="petalsTimeline"></div>
+
+  <!-- Before June 1 -->
+  <div class="date-header reveal" style="margin-top:0"><div class="date-header-inner"><span class="date-label">Before June 1, 2026</span><span class="date-story">Prelude to Her Day</span></div></div>
+
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/1-unknown-date4.JPG" data-caption="The first picture of 2026. Not the first ever — just the one that started this chapter."><div class="card-img-wrap"><img src="photos/1-unknown-date4.JPG" alt="Pre-birthday" loading="lazy"></div><div class="card-caption">The first picture of 2026. Just the one that started this chapter.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/2-unknown-date3.JPG" data-caption="Another one. I was collecting every glimpse of her I could get."><div class="card-img-wrap"><img src="photos/2-unknown-date3.JPG" alt="Pre-birthday" loading="lazy"></div><div class="card-caption">Another one. I was collecting every glimpse of her I could get.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/3-unknown-date2.JPG" data-caption="Every photo of her still hits like catching a glimpse of something rare."><div class="card-img-wrap"><img src="photos/3-unknown-date2.JPG" alt="Pre-birthday" loading="lazy"></div><div class="card-caption">Every photo of her still hits like a glimpse of something rare.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/4-unknown-date1.JPG" data-caption="Still chasing, still hoping. Some things don't change."><div class="card-img-wrap"><img src="photos/4-unknown-date1.JPG" alt="Pre-birthday" loading="lazy"></div><div class="card-caption">Still chasing. Still hoping. Some things don't change.</div></div></div>
+
+  <div class="quote-card reveal"><p>&#8220;Every journey deserves a map. This is ours — 2026 and counting.&#8221;</p><div class="quote-line"></div></div>
+
+  <!-- June 4 -->
+  <div class="date-header reveal"><div class="date-header-inner"><span class="date-label">June 4, 2026</span><span class="date-story">The Tough Day</span></div></div>
+
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/5-2026-06-04_on-her-way-to-go-make-her-nails-for-her-birthday-shoot-post-birthday.JPG" data-caption="On her way to get her nails done. Even the smallest updates from her felt like everything."><div class="card-img-wrap"><img src="photos/5-2026-06-04_on-her-way-to-go-make-her-nails-for-her-birthday-shoot-post-birthday.JPG" alt="On way to nails" loading="lazy"></div><div class="card-caption">On her way to make her nails. Even the small updates felt big to me.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card video-card" data-video="videos/6-2026-06-04_i-asked-her-to-show-me-a-picture-of-her-nails-for-her-birthday-shoot-post-birthday.MP4" data-caption="I asked to see her nails for the birthday shoot — she sent me this video. I replayed it more times than I'd admit."><div class="card-img-wrap"><div class="play-icon"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div><div class="card-caption">I asked to see her nails — she actually sent me this. I replayed it too many times.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/7-2026-06-04_after-a-long-day-of-stress-and-artisan-failing-her-and-she-had-cried-as-a-big-baby.JPG" data-caption="After a long day of stress — the artisan failed her and she cried. I hated not being there."><div class="card-img-wrap"><img src="photos/7-2026-06-04_after-a-long-day-of-stress-and-artisan-failing-her-and-she-had-cried-as-a-big-baby.JPG" alt="cried" loading="lazy"></div><div class="card-caption">She had a rough day. The artisan failed her, she cried. I hated not being there.</div></div></div>
+
+  <div class="quote-card reveal"><p>&#8220;Even the cloudy days become landmarks on the map to something beautiful.&#8221;</p><div class="quote-line"></div></div>
+
+  <!-- June 5 -->
+  <div class="date-header reveal"><div class="date-header-inner"><span class="date-label">June 5, 2026</span><span class="date-story">Birthday Shoot &amp; Our Time Together</span></div></div>
+
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/8-2026-06-05_day-of-her-birthday-shoot-post-birthday-she-showed-me-her-face-before-makeup.JPG" data-caption="Day of her post-birthday shoot — she showed me her face before makeup. She has no idea how beautiful she is without even trying."><div class="card-img-wrap"><img src="photos/8-2026-06-05_day-of-her-birthday-shoot-post-birthday-she-showed-me-her-face-before-makeup.JPG" alt="Before makeup" loading="lazy"></div><div class="card-caption">Her face before makeup. She has no idea how beautiful she is without trying.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card video-card" data-video="videos/9-2026-06-05_her-face-kitted-with-makeup-for-her-birthday.MP4" data-caption="Her face done up with makeup for the birthday shoot. I couldn't stop watching."><div class="card-img-wrap"><div class="play-icon"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div><div class="card-caption">Makeup on for her birthday shoot. I couldn't stop watching this.</div></div></div>
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/10-2026-06-05_prepping-for-our-movie-date-on-date-of-her-birthday-shoot-post-birthday.jpg" data-caption="Getting ready to go out after the shoot. I was counting down every minute."><div class="card-img-wrap"><img src="photos/10-2026-06-05_prepping-for-our-movie-date-on-date-of-her-birthday-shoot-post-birthday.jpg" alt="Prepping" loading="lazy"></div><div class="card-caption">Getting ready. I was counting every minute until I'd see her.</div></div></div>
+
+  <!-- Goofing gallery -->
+  <div class="entry-row reveal col"><div class="gallery-wrap"><div class="gallery-grid">
+    <div class="entry-card" data-src="photos/11-2026-06-05_we-goofing-around-before-our-movie-date.jpg" data-caption="Goofing around together — this is us, unfiltered and happy."><div class="card-img-wrap"><img src="photos/11-2026-06-05_we-goofing-around-before-our-movie-date.jpg" alt="Goofing" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/12-2026-06-05_we-goofing-around-before-our-movie-date2.jpg" data-caption="More of us being silly — her laugh is my favorite sound."><div class="card-img-wrap"><img src="photos/12-2026-06-05_we-goofing-around-before-our-movie-date2.jpg" alt="Goofing" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/13-2026-06-05_we-goofing-around-before-our-movie-date3.jpg" data-caption="Just being us — these moments are the real treasure."><div class="card-img-wrap"><img src="photos/13-2026-06-05_we-goofing-around-before-our-movie-date3.jpg" alt="Goofing" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/14-2026-06-05_we-goofing-around-before-our-movie-date4.jpg" data-caption="Pure joy — I could do this forever."><div class="card-img-wrap"><img src="photos/14-2026-06-05_we-goofing-around-before-our-movie-date4.jpg" alt="Goofing" loading="lazy"></div></div>
+  </div><div class="gallery-caption">Goofing around, laughing. These are the moments I'm fighting for.</div></div></div>
+
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/15-2026-06-05_we-goofing-around-before-our-movie-date5.jpg" data-caption="One more silly moment. Her smile is the whole reason I'm chasing."><div class="card-img-wrap"><img src="photos/15-2026-06-05_we-goofing-around-before-our-movie-date5.jpg" alt="Goofing" loading="lazy"></div><div class="card-caption">One more. Her smile — the whole reason I'm doing this.</div></div></div>
+
+  <!-- Holding hands gallery -->
+  <div class="entry-row reveal col"><div class="gallery-wrap"><div class="gallery-grid">
+    <div class="entry-card" data-src="photos/16-2026-06-05_holding-her-beautiful-well-manicured-hands-on-the-date-while-waiting-for-our-movie-time.jpg" data-caption="Holding her beautiful, well-manicured hands. The world paused."><div class="card-img-wrap"><img src="photos/16-2026-06-05_holding-her-beautiful-well-manicured-hands-on-the-date-while-waiting-for-our-movie-time.jpg" alt="Holding hands" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/17-2026-06-05_holding-her-beautiful-well-manicured-hands-on-the-date-while-waiting-for-our-movie-time2.jpg" data-caption="Her hand in mine — time didn't exist."><div class="card-img-wrap"><img src="photos/17-2026-06-05_holding-her-beautiful-well-manicured-hands-on-the-date-while-waiting-for-our-movie-time2.jpg" alt="Holding hands" loading="lazy"></div></div>
+  </div><div class="gallery-caption">Holding her hands. Felt like crossing a finish line I've been running toward forever.</div></div></div>
+
+  <div class="quote-card reveal"><p>&#8220;It's not the grand gestures, but the in-between moments that chart a love story worth telling.&#8221;</p><div class="quote-line"></div></div>
+
+  <!-- June 6 -->
+  <div class="date-header reveal"><div class="date-header-inner"><span class="date-label">June 6, 2026</span><span class="date-story">Godson's Party &amp; Lagos Island</span></div></div>
+
+  <div class="entry-row reveal"><div class="entry-card" data-src="photos/18-2026-06-06-morning-of-the-market-runs-day-she-agreed-to-we-streaking-each-other-on-snapchat.JPG" data-caption="Morning of the market runs — she agreed to start Snapchat streaking. Another inch forward for me."><div class="card-img-wrap"><img src="photos/18-2026-06-06-morning-of-the-market-runs-day-she-agreed-to-we-streaking-each-other-on-snapchat.JPG" alt="Market morning" loading="lazy"></div><div class="card-caption">Morning market runs — the day she agreed to our Snapchat streak. Another inch forward.</div></div></div>
+
+  <!-- Dressed up gallery -->
+  <div class="entry-row reveal col"><div class="gallery-wrap"><div class="gallery-grid">
+    <div class="entry-card" data-src="photos/19-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market.jpg" data-caption="Beautifully dressed for her godson's party — after a long Lagos Island market day."><div class="card-img-wrap"><img src="photos/19-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market.jpg" alt="Dressed up" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/20-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market2.jpg" data-caption="Late night, still flawless. That's her superpower."><div class="card-img-wrap"><img src="photos/20-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market2.jpg" alt="Dressed up" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/21-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market3.jpg" data-caption="The kind of beauty that shows up even after a chaotic day."><div class="card-img-wrap"><img src="photos/21-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market3.jpg" alt="Dressed up" loading="lazy"></div></div>
+    <div class="entry-card" data-src="photos/22-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market4.jpg" data-caption="After a busy day at Lagos Island Market — still the most beautiful person in any room."><div class="card-img-wrap"><img src="photos/22-2026-06-06_a-very-beautifully-dressed-girl-about-to-go-for-her-godson-birthday-party-late-night-after-a-very-busy-day-at-lagos-island-market4.jpg" alt="Dressed up" loading="lazy"></div></div>
+  </div><div class="gallery-caption">Beautifully dressed for her godson's party. After a long Lagos Island Market day — still the most beautiful person I've ever seen.</div></div></div>
+
+  <div class="quote-card reveal"><p>&#8220;What if this is just the beginning of the chase?&#8221;</p><div class="quote-line"></div></div>
+
+  <div class="infinity-section reveal"><div class="infinity-mark">&#8734;</div><h2>To Be Continued&hellip;</h2><p>&#8220;The best maps are never finished — they just keep unfolding.&#8221;</p></div>
+
+  <svg class="timeline-svg" id="mapSvg" preserveAspectRatio="none"></svg>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-names">Nanya <span style="color:var(--gold);font-style:italic;">&amp;</span> Babatunde</div>
+  <div class="footer-dates">2026 &rarr; &#8734;</div>
+  <div class="footer-heart">&#9829;</div>
+</footer>
+
+<!-- ═══ LIGHTBOX ═══ -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img id="lightboxImg" src="" alt="" style="display:none">
+    <video id="lightboxVideo" controls style="display:none"></video>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ── SAKURA PETALS ── */
+  var sakuraColors=[
+    'radial-gradient(ellipse at 35% 35%, rgba(255,160,180,0.85) 0%, rgba(255,130,155,0.5) 70%, transparent 100%)',
+    'radial-gradient(ellipse at 35% 35%, rgba(255,182,193,0.8) 0%, rgba(255,150,170,0.45) 70%, transparent 100%)',
+    'radial-gradient(ellipse at 35% 35%, rgba(255,192,203,0.75) 0%, rgba(255,140,160,0.4) 70%, transparent 100%)',
+    'radial-gradient(ellipse at 35% 35%, rgba(255,175,190,0.82) 0%, rgba(255,145,165,0.48) 70%, transparent 100%)',
+    'radial-gradient(ellipse at 35% 35%, rgba(255,200,210,0.7) 0%, rgba(255,160,180,0.4) 70%, transparent 100%)'
+  ];
+  function spawnPetals(container,count){
+    if(!container)return;
+    var frag=document.createDocumentFragment();
+    for(var i=0;i<count;i++){
+      var p=document.createElement('div');p.className='petal';
+      p.style.left=(Math.random()*95)+'%';
+      p.style.width=(10+Math.random()*16)+'px';
+      p.style.height=(13+Math.random()*18)+'px';
+      p.style.background=sakuraColors[Math.floor(Math.random()*sakuraColors.length)];
+      p.style.animationDuration=(8+Math.random()*16)+'s';
+      p.style.animationDelay=(Math.random()*15)+'s';
+      p.style.borderRadius=(20+Math.random()*40)+'% '+(40+Math.random()*50)+'% '+(10+Math.random()*40)+'% '+(40+Math.random()*50)+'% / '+(10+Math.random()*30)+'% '+(60+Math.random()*30)+'% '+(10+Math.random()*30)+'% '+(60+Math.random()*30)+'%';
+      frag.appendChild(p);
+    }
+    container.appendChild(frag);
+  }
+  spawnPetals(document.getElementById('petalsCover'),35);
+  spawnPetals(document.getElementById('petalsTimeline'),25);
+
+  /* ── LIGHTBOX ── */
+  var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightboxImg'),lbVideo=document.getElementById('lightboxVideo'),lbCaption=document.getElementById('lightboxCaption');
+  function openLightbox(media,caption,isVideo){
+    if(isVideo){lbImg.style.display='none';lbVideo.style.display='block';lbVideo.src=media;lbVideo.play()}
+    else{lbVideo.style.display='none';lbVideo.pause();lbVideo.src='';lbImg.style.display='block';lbImg.src=media}
+    lbCaption.textContent=caption||'';lb.classList.add('active');document.body.style.overflow='hidden';
+  }
+  function closeLightbox(){
+    lb.classList.remove('active');document.body.style.overflow='';
+    setTimeout(function(){lbImg.src='';lbVideo.pause();lbVideo.src='';lbImg.style.display='none';lbVideo.style.display='none'},300);
+  }
+  document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLightbox()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox()});
+  document.querySelectorAll('.entry-card').forEach(function(card){card.addEventListener('click',function(){var src=card.getAttribute('data-src'),video=card.getAttribute('data-video'),caption=card.getAttribute('data-caption');if(video)openLightbox(video,caption,true);else if(src)openLightbox(src,caption,false)})});
+
+  /* ── SCROLL REVEAL ── */
+  var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el)});
+
+  /* ── MAP PATH ── */
+  function waveX(t){return 0.5+Math.sin(t*Math.PI*2.3+0.8)*0.36+Math.sin(t*Math.PI*5.7+1.9)*0.17+Math.cos(t*Math.PI*1.4+3.1)*0.10+Math.sin(t*Math.PI*11.3)*0.04}
+  function clampX(n){return Math.max(0.06,Math.min(0.94,n))}
+  function toPx(n,w){return clampX(n)*w}
+  function getPathXAtY(y,tlH,tlW){var sy=40,ey=tlH-80,t=(y-sy)/(ey-sy);return toPx(waveX(Math.max(0,Math.min(1,t))),tlW)}
+  function generateRoutePathD(tlW,tlH){var pts=[],n=120,sy=40,ey=tlH-80;for(var i=0;i<=n;i++){var t=i/n;pts.push({x:toPx(waveX(t),tlW),y:sy+t*(ey-sy)})}if(pts.length<2)return'';var d='M '+pts[0].x+' '+pts[0].y;for(var i=1;i<pts.length;i++){var p0=pts[i-1],p1=pts[i];d+=' Q '+((p0.x+p1.x)/2)+' '+((p0.y+p1.y)/2)+', '+p1.x+' '+p1.y}return d}
+  function mkPathEl(d,stroke,width){var el=document.createElementNS('http://www.w3.org/2000/svg','path');el.setAttribute('d',d);el.setAttribute('fill','none');el.setAttribute('stroke',stroke);el.setAttribute('stroke-width',width);el.setAttribute('stroke-linecap','round');el.setAttribute('stroke-linejoin','round');return el}
+  function addPinEl(svg,cx,cy){var o=document.createElementNS('http://www.w3.org/2000/svg','circle');o.setAttribute('cx',cx);o.setAttribute('cy',cy);o.setAttribute('r','15');o.setAttribute('fill','#FFFDF8');o.setAttribute('stroke','#C9A96E');o.setAttribute('stroke-width','2.5');o.style.filter='drop-shadow(0 2px 6px rgba(62,44,31,0.15))';svg.appendChild(o);var i=document.createElementNS('http://www.w3.org/2000/svg','circle');i.setAttribute('cx',cx);i.setAttribute('cy',cy);i.setAttribute('r','6');i.setAttribute('fill','#C9A96E');svg.appendChild(i)}
+  function addMarkerEl(svg,cx,cy,color,text){var o=document.createElementNS('http://www.w3.org/2000/svg','circle');o.setAttribute('cx',cx);o.setAttribute('cy',cy);o.setAttribute('r','18');o.setAttribute('fill','#FFFDF8');o.setAttribute('stroke',color);o.setAttribute('stroke-width','2.5');o.style.filter='drop-shadow(0 2px 6px rgba(62,44,31,0.15))';svg.appendChild(o);if(text){var t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',cx);t.setAttribute('y',cy+7);t.setAttribute('text-anchor','middle');t.setAttribute('font-size','18');t.setAttribute('fill',color);t.setAttribute('font-family',"'Playfair Display', serif");t.setAttribute('font-style','italic');t.textContent=text;svg.appendChild(t)}else{var i=document.createElementNS('http://www.w3.org/2000/svg','circle');i.setAttribute('cx',cx);i.setAttribute('cy',cy);i.setAttribute('r','8');i.setAttribute('fill',color);svg.appendChild(i)}}
+
+  function buildMapPath(){
+    var timeline=document.getElementById('timeline'),svg=document.getElementById('mapSvg');
+    if(!timeline||!svg)return;
+    if(window.innerWidth<700){svg.style.display='none';return}
+    var tlW=timeline.clientWidth,tlH=timeline.scrollHeight;
+    svg.setAttribute('viewBox','0 0 '+tlW+' '+tlH);svg.style.height=tlH+'px';svg.style.width=tlW+'px';svg.innerHTML='';
+    var defs=document.createElementNS('http://www.w3.org/2000/svg','defs');svg.appendChild(defs);
+    var pathD=generateRoutePathD(tlW,tlH);
+    var shadow=mkPathEl(pathD,'rgba(62,44,31,0.09)',22);shadow.setAttribute('transform','translate(3,4)');svg.appendChild(shadow);
+    svg.appendChild(mkPathEl(pathD,'rgba(255,253,248,0.93)',13));
+    var main=mkPathEl(pathD,'#C9A96E',6);main.setAttribute('stroke-dasharray',tlH*1.8);main.setAttribute('stroke-dashoffset',tlH*1.8);svg.appendChild(main);
+    var dash=mkPathEl(pathD,'rgba(251,247,240,0.55)',2);dash.setAttribute('stroke-dasharray','10 18');dash.setAttribute('stroke-dashoffset',tlH*1.8);svg.appendChild(dash);
+    timeline.querySelectorAll('.date-header').forEach(function(dh){var r=dh.getBoundingClientRect(),tr=timeline.getBoundingClientRect(),cy=r.top+r.height/2-tr.top;addPinEl(svg,getPathXAtY(cy,tlH,tlW),cy)});
+    addMarkerEl(svg,getPathXAtY(30,tlH,tlW),25,'#8B9D7D','');
+    addMarkerEl(svg,getPathXAtY(tlH-65,tlH,tlW),tlH-55,'#C9A96E','\u221E');
+    var rows=timeline.querySelectorAll('.entry-row'),total=rows.length;
+    rows.forEach(function(row,idx){
+      var t=(total>1)?idx/(total-1):0.5,pathX=toPx(waveX(t),tlW);
+      var el=row.classList.contains('col')?row.querySelector('.gallery-wrap'):row.querySelector('.entry-card');
+      var elW=el?(el.offsetWidth||380):380,minX=elW/2,maxX=tlW-elW/2;
+      var cx=Math.max(minX,Math.min(maxX,pathX)),offsetPx=cx-tlW/2;
+      if(el)el.style.transform='translateX('+offsetPx+'px)';
+      row.style.alignItems='center';
+      var rr=row.getBoundingClientRect(),tr=timeline.getBoundingClientRect(),rowCY=rr.top+rr.height/2-tr.top;
+      var dot=document.createElementNS('http://www.w3.org/2000/svg','circle');
+      dot.setAttribute('cx',cx);dot.setAttribute('cy',rowCY);dot.setAttribute('r','4');dot.setAttribute('fill','#C9A96E');dot.setAttribute('stroke','#FFFDF8');dot.setAttribute('stroke-width','2');dot.style.filter='drop-shadow(0 1px 2px rgba(62,44,31,0.2))';
+      var ani=document.createElementNS('http://www.w3.org/2000/svg','animate');ani.setAttribute('attributeName','r');ani.setAttribute('values','3;9;3');ani.setAttribute('dur',(1.8+Math.random()*2.2).toFixed(1)+'s');ani.setAttribute('repeatCount','indefinite');dot.appendChild(ani);
+      var aniOp=document.createElementNS('http://www.w3.org/2000/svg','animate');aniOp.setAttribute('attributeName','opacity');aniOp.setAttribute('values','1;0.35;1');aniOp.setAttribute('dur',(2+Math.random()*2.8).toFixed(1)+'s');aniOp.setAttribute('repeatCount','indefinite');dot.appendChild(aniOp);
+      svg.appendChild(dot);
+    });
+    requestAnimationFrame(function(){requestAnimationFrame(function(){[main,dash].forEach(function(p){p.style.transition='stroke-dashoffset 2.8s ease-out';p.setAttribute('stroke-dashoffset','0')})})});
+  }
+  var resizeTimer;function debounceBuild(){clearTimeout(resizeTimer);resizeTimer=setTimeout(buildMapPath,250)}
+  window.addEventListener('load',function(){setTimeout(buildMapPath,600);setTimeout(buildMapPath,2000)});
+  window.addEventListener('resize',debounceBuild);
+  var imgLoadTimer;document.querySelectorAll('img').forEach(function(img){img.addEventListener('load',function(){clearTimeout(imgLoadTimer);imgLoadTimer=setTimeout(buildMapPath,400)})});
+})();
+</script>
+</body>
+</html>
